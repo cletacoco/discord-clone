@@ -1,0 +1,146 @@
+:root {
+    /* color */
+    --discord-blue : #5868f2;
+    --font-white : #fff;
+    --font-black : #4f545c;
+    --container-size : 1160px;
+}
+
+main {
+    display: block;
+}
+header {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0.5%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+}
+.pc-view-header {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+
+}
+.feedback {
+    color: var(--discord-blue);
+    width: auto;
+    border: 0;
+    padding: 0 10px 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.lang {
+    color: var(--discord-blue);
+    width: auto;
+    border: 0;
+    padding: 0 10px 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.inquiry {
+    color: var(--discord-blue);
+    width: auto;
+    border: 0;
+    padding: 0 10px 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+.login{
+    color: var(--discord-blue);
+    border: 0;
+    padding: 0 10px 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.pc-view-header > a:hover {
+    text-decoration: underline;
+}
+.header-light-group1 > a:hover {
+    text-decoration: underline;
+}    
+
+#intro {
+    text-align: center;
+}
+
+
+hr {
+    box-sizing: border-box;
+    height: 0;
+    overflow: visible;
+}
+.support-center {
+    background-image: url(img/center.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h5 {
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--font-white);
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 110px 0 0 0;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+
+}
+input {
+    border: 1px solid #666;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #666;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    width: 600px;
+    outline: none;
+}
+
+#intro > p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--font-black);
+    margin-top: 20px;
+    margin-bottom: 75px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.5;
+}
+#intro > h1 {
+
+        margin-top: 104px;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 0;
+        color: var(--font-black);
+}
+
+.suppoter-discord {
+    color: var(--discord-blue);
+    text-decoration: none;
+}
+
+.suppoter-discord:hover {
+    text-decoration: underline;
+}

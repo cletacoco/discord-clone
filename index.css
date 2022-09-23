@@ -68,12 +68,12 @@ header {
     color: var(--discord-blue);
     width: auto;
     border: 0;
-    padding: 0 5px 0;
+    padding: 0 10px 0;
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 .login{
     color: var(--discord-blue);
@@ -83,7 +83,10 @@ header {
     font-weight: 400;
     line-height: 1.5;
 }
-.pc-view-header > a:hover {
+.ham > a:hover {
+    text-decoration: underline;
+}
+.login:hover {
     text-decoration: underline;
 }
 #intro {
@@ -173,13 +176,13 @@ input {
     text-decoration: underline;
 }
 li {
-    background: white;
     padding: 5px;
     width: 240px;
     height: 240px;
     margin: 10px;
     text-align: center;
     border-radius: 5px;
+
 }
 
 li > h2 {
@@ -188,13 +191,18 @@ li > h2 {
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 10px;
-    text-decoration: none;
-
 }
 
 h3 {
     color: #687272;
-    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: -10px auto 0;
+    width: 200px;
+    margin-top: 10px;
+    line-height: 20px;
+    
 }
 
 hr {
@@ -208,10 +216,12 @@ hr {
 }
 
 .category-grid {
-    display: block;
     margin: 0 auto;
-    max-width: var(--container-size);
-    
+    max-width: var(--container-size);    
+}
+
+ul>a:hover {
+    transform: translateY(-5px);
 }
 
 .menu1 {
@@ -220,12 +230,94 @@ hr {
 
 }
 
-img {
+figure > img {
     width: 106px;
 }
 
 ul {
     display: flex;
-    max-width: var(--container-size);
+    max-width: 100%;
     justify-content: center;
+}
+
+ul>a {
+    text-decoration: none;
+}
+
+.box-shadow {
+    box-shadow: 0px 9px 30px rgba(200, 200, 200, 0.30);
+}
+
+.help {
+    margin-top: 42px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: var(--font-black);
+    font-weight: 400;
+}
+
+.help > h2 {
+    display: block;
+    text-align: center;
+
+}
+.game {
+    background-color: #f2f2f2;
+}
+
+.Twitter {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background: #23272a;
+    background-size: 235px 185px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.Details {
+    border: 0px solid black;
+    border-radius: 30px;
+    background: #3ba55c;
+    color: var(--font-white);
+    display: block;
+    width: 250px;
+    height: 42px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 50px auto;
+
+}
+
+.hook>a {
+    text-decoration: none;
+}
+
+button:hover {
+    box-shadow: 0px 9px 20px rgba(0, 0, 0,0.4);
+}
+
+.app {
+    background-image: url(img/Multiple_dewices.png);
+    background-size: 814px 145px;
+    width: 814px;
+    height: 145px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.app > a {
+    opacity: 50%;
+}
+
+.app > a:hover {
+    opacity: 100%;
 }

@@ -6,9 +6,6 @@
     --container-size : 1160px;
 }
 
-main {
-    display: block;
-}
 header {
     max-width: 1160px;
     margin: 0 auto;
@@ -97,7 +94,6 @@ header {
 hr {
     box-sizing: border-box;
     height: 0;
-    overflow: visible;
 }
 .support-center {
     background-image: url(img/center.png);
@@ -161,8 +157,8 @@ input {
 }
 #intro > h1 {
 
-        margin-top: 104px;
-        font-size: 26px;
+        margin-top: 100px;
+        font-size: 24px;
         font-weight: 400;
         line-height: 100%;
         margin-bottom: 0;
@@ -178,10 +174,9 @@ input {
     text-decoration: underline;
 }
 li {
-    padding: 5px;
     width: 240px;
-    height: 240px;
-    margin: 10px;
+    height: 260px;
+    margin: 5px;
     text-align: center;
     border-radius: 5px;
 
@@ -217,29 +212,30 @@ li > hr {
 
 }
 
-.category-grid {
-    margin: 0 auto;
-    max-width: var(--container-size);    
-}
-
 ul>a:hover {
     transform: translateY(-5px);
 }
 
 .menu1 {
-    align-items: center;
-    margin: 0 auto;
-
+    
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    
 }
 
 figure > img {
     width: 106px;
+    margin-top: 15px;
 }
 
 ul {
     display: flex;
-    max-width: 100%;
+    width: 100%;
     justify-content: center;
+
 }
 
 ul>a {
@@ -271,14 +267,12 @@ ul>a {
     background-color: #f2f2f2;
 }
 
+.category-menu3 {
+    margin-bottom: 70px;
+}
+
 footer {
     background: #23272a;
-    background-size: 235px 185px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    margin-top: 70px;
-    width: 100%;
 }
 
 .Details {
@@ -286,7 +280,7 @@ footer {
     border-radius: 30px;
     background: #3ba55c;
     color: var(--font-white);
-    display: block;
+    justify-content: center;
     width: 250px;
     height: 42px;
     text-align: center;
@@ -296,14 +290,18 @@ footer {
     font-size: 16px;
     font-weight: 600;
     margin: 50px auto;
+    display: inline-block;
+}
 
+.Detail {
+    text-align: center;
 }
 
 .hook>a {
     text-decoration: none;
 }
 
-button:hover {
+.Details:hover {
     box-shadow: 0px 9px 20px rgba(0, 0, 0,0.4);
 }
 
@@ -319,6 +317,7 @@ button:hover {
 
 .app > a {
     opacity: 50%;
+    
 }
 
 .app > a:hover {
@@ -345,4 +344,76 @@ button:hover {
 hr {
     opacity: 0.1;
     width: 1160px;
+}
+
+.footerlogo {
+    display: flex;
+    width: 1100px;
+    margin: 30px auto;
+}
+.links {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.link1 {
+
+    display: flex;
+    flex-flow: column nowrap;
+    color: var(--font-black);
+    justify-content: space-between;
+    width: 100%;
+    line-height: 30px;
+    font-size: 15px;
+}
+.link1 > a {
+    text-decoration: none;
+    color: var(--font-white);
+    opacity: 0.3;
+    font-weight: 400;
+}
+.link1 > a:hover {
+    opacity: 1;
+    
+}
+
+.human {
+    color: #3ba55c;
+}
+
+.interval {
+    flex-basis: 250px;
+    height: 100%;
+    content: '';
+}
+
+.footerimg {
+    cursor: pointer;
+}
+
+.pasting > a {
+    text-decoration: none;
+    color: var(--font-white);
+    opacity: 0.3;
+    font-weight: 400;
+}
+
+.pasting > a:hover {
+    opacity: 1;
+}
+
+.middle {
+    color: #fff;
+    opacity: 0.3;
+}
+
+.text {
+    color: #3ba55c;
+}
+
+.Service-button {
+     display: block;
+     position: sticky;
+     top: 0;
+     bottom: 0;
 }

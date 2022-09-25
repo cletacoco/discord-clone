@@ -5,6 +5,9 @@
     --font-black : #4f545c;
     --container-size : 1160px;
 }
+body {
+    overflow-x: hidden;
+}
 
 header {
     max-width: 1160px;
@@ -273,6 +276,7 @@ ul>a {
 
 footer {
     background: #23272a;
+    padding: 0 0 50px;
 }
 
 .Details {
@@ -291,6 +295,7 @@ footer {
     font-weight: 600;
     margin: 50px auto;
     display: inline-block;
+    transition: all 0.3s;
 }
 
 .Detail {
@@ -302,7 +307,7 @@ footer {
 }
 
 .Details:hover {
-    box-shadow: 0px 9px 20px rgba(0, 0, 0,0.4);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0,0.5);
 }
 
 .app {
@@ -315,8 +320,10 @@ footer {
     margin: 0 auto;
 }
 
+
 .app > a {
     opacity: 50%;
+    transition: all 0.3s;
     
 }
 
@@ -349,11 +356,10 @@ hr {
 .footerlogo {
     display: flex;
     width: 1100px;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 .links {
     display: flex;
-    height: 100%;
     width: 100%;
 }
 .link1 {
@@ -365,12 +371,14 @@ hr {
     width: 100%;
     line-height: 30px;
     font-size: 15px;
+    
 }
 .link1 > a {
     text-decoration: none;
     color: var(--font-white);
     opacity: 0.3;
     font-weight: 400;
+    transition: all 0.4s;
 }
 .link1 > a:hover {
     opacity: 1;
@@ -396,6 +404,7 @@ hr {
     color: var(--font-white);
     opacity: 0.3;
     font-weight: 400;
+    transition: all 0.4s;
 }
 
 .pasting > a:hover {
@@ -411,9 +420,31 @@ hr {
     color: #3ba55c;
 }
 
-.Service-button {
-     display: block;
-     position: sticky;
-     top: 0;
-     bottom: 0;
+
+.Service-center {
+    
+    background-color: var(--discord-blue);
+    display: flex;
+    align-items: center;
+    border: 0px solid black;
+    width: 134px;
+    height: 45px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+
+}
+
+
+.buttons {
+    color: #fff;
+    fill: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    margin: 0 auto;
+    word-spacing: 2px;
+
 }

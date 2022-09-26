@@ -83,6 +83,50 @@ header {
     font-weight: 400;
     line-height: 1.5;
 }
+
+.mobile-view {
+    width: 15px;
+    height: 2px;
+    background-color: var(--discord-blue);
+    position: relative;
+    display: block;
+    margin: 8px 0;
+    content: '';
+}
+
+.mobile-view::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: var(--discord-blue);
+    top: 5px;
+
+}
+
+.mobile-view::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: var(--discord-blue);
+    top: -5px;
+}
+@media screen and (min-width:768px) {
+    .mobile-view {
+        display: none;
+        
+    }
+
+}
+@media screen and (max-width:768px) {
+    .ham {
+        display: flex;
+        color: var(--font-black);
+        display: none;
+    }
+}
+
 .ham > a:hover {
     text-decoration: underline;
 }
@@ -145,6 +189,7 @@ input {
 .serch-bar > svg {
     position: absolute;
     margin-left: 15px;
+    color: #687272;
    
 }
 

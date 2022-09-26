@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+.discord-logo {
+    margin-left: 15px;
+}
+
 header {
     max-width: 1160px;
     margin: 0 auto;
@@ -445,6 +449,7 @@ hr {
 
 .footerimg {
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .pasting > a {

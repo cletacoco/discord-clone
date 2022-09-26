@@ -94,6 +94,7 @@ header {
     margin: 8px 0;
     content: '';
     margin-right: 25px;
+    margin-top: 10px;
 }
 
 .mobile-view::after {

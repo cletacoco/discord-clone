@@ -237,7 +237,7 @@ li {
 
 }
 
-li > h2 {
+a > h2 {
     color: var(--discord-blue);
     font-size: 22px;
     font-weight: 400;
@@ -257,7 +257,7 @@ h3 {
     
 }
 
-li > hr {
+a > hr {
     height: 1px;
     border: none;
     background-color: #99aab5;
@@ -267,7 +267,7 @@ li > hr {
 
 }
 
-ul>a:hover {
+ul>li:hover {
     transform: translateY(-5px);
 }
 
@@ -293,7 +293,7 @@ ul {
 
 }
 
-ul>a {
+li>a {
     text-decoration: none;
 }
 
